@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Web PaaS</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-primary-600 text-xl font-bold">PaaS App</span>
+                </div>
+                <div class="flex items-center">
+                    <a href="index.html" class="px-3 py-2 rounded-md text-sm font-medium text-primary-600 hover:bg-primary-50">Home</a>
+                    <a href="form.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-500 hover:text-primary-600 hover:bg-primary-50">Form</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="gradient-bg py-32 flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center" data-aos="fade-up">
+                <h1 class="text-5xl font-extrabold text-white tracking-tight mb-4">
+                    <span class="block">Hello, World!</span>
+                </h1>
+                <p class="mt-3 max-w-md mx-auto text-lg text-white">
+                    Aplikasi Web Modern dengan Netlify PaaS & Tailwind CSS.
+                </p>
+                <div class="mt-8 flex justify-center">
+                    <a href="form.html" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-primary-700 bg-white hover:bg-gray-100 shadow-md transition duration-300 ease-in-out transform hover:-translate-y-1">
+                        <i class="fas fa-paper-plane mr-2"></i> Ke Halaman Form
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900" data-aos="fade-up">
+                    Fitur Aplikasi
+                </h2>
+                <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-500" data-aos="fade-up" data-aos-delay="100">
+                    Aplikasi ini menyediakan antarmuka modern dengan Tailwind CSS dan efek interaktif.
+                </p>
+            </div>
+
+            <div class="mt-16">
+                <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+                    <div class="bg-primary-50 rounded-lg shadow-md p-6 border border-primary-100 hover:shadow-lg transition duration-300" data-aos="fade-right">
+                        <div class="flex items-center mb-4">
+                            <div class="h-12 w-12 flex items-center justify-center rounded-md bg-primary-500 text-white">
+                                <i class="fas fa-info-circle text-xl"></i>
+                            </div>
+                            <h3 class="ml-4 text-xl font-medium text-gray-900">Tentang Aplikasi</h3>
+                        </div>
+                        <p class="text-gray-600">
+                            Aplikasi ini dibuat sebagai bagian dari tugas praktik untuk memahami konsep PaaS. Dibuat dengan teknologi modern dan antarmuka yang responsif.
+                        </p>
+                    </div>
+
+                    <div class="bg-primary-50 rounded-lg shadow-md p-6 border border-primary-100 hover:shadow-lg transition duration-300" data-aos="fade-left">
+                        <div class="flex items-center mb-4">
+                            <div class="h-12 w-12 flex items-center justify-center rounded-md bg-primary-500 text-white">
+                                <i class="fas fa-clipboard-list text-xl"></i>
+                            </div>
+                            <h3 class="ml-4 text-xl font-medium text-gray-900">Fitur Form</h3>
+                        </div>
+                        <p class="text-gray-600">
+                            Kunjungi halaman form untuk memasukkan data dengan antarmuka yang mudah digunakan. Form dilengkapi dengan validasi dan efek animasi.
+                        </p>
+                        <div class="mt-4">
+                            <a href="form.html" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700">
+                                Buka Form <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Section with Animation -->
+    <div class="bg-primary-600 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold text-white" data-aos="fade-up">
+                    Platform as a Service
+                </h2>
+                <p class="mt-4 max-w-2xl mx-auto text-lg text-primary-100" data-aos="fade-up" data-aos-delay="100">
+                    Manfaatkan kekuatan PaaS untuk aplikasi web modern Anda
+                </p>
+            </div>
+            <div class="grid grid-cols-2 gap-8 md:grid-cols-4">
+                <div class="text-center" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="text-4xl font-extrabold text-white mb-2 counter" data-target="99">0</div>
+                    <div class="text-primary-200">Uptime %</div>
+                </div>
+                <div class="text-center" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="text-4xl font-extrabold text-white mb-2 counter" data-target="250">0</div>
+                    <div class="text-primary-200">Ms Response</div>
+                </div>
+                <div class="text-center" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="text-4xl font-extrabold text-white mb-2 counter" data-target="5">0</div>
+                    <div class="text-primary-200">Menit Deploy</div>
+                </div>
+                <div class="text-center" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="text-4xl font-extrabold text-white mb-2 counter" data-target="100">0</div>
+                    <div class="text-primary-200">Skala %</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Aplikasi Web PaaS</h3>
+                    <p class="text-gray-400">
+                        Demonstrasi sederhana penggunaan Platform as a Service dengan Netlify dan Tailwind CSS.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Tautan</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Beranda</a></li>
+                        <li><a href="form.html" class="text-gray-400 hover:text-white">Form</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Teknologi</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-html5"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-css3-alt"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-js"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-tailwind"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                <p class="text-gray-400">© 2025 Aplikasi Web PaaS. Dibuat dengan Netlify.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS animation
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Counter animation
+        const counters = document.querySelectorAll('.counter');
+        counters.forEach(counter => {
+            const target = parseInt(counter.getAttribute('data-target'));
+            const duration = 2000; // Animation duration in ms
+            const step = target / (duration / 16); // 60fps
+            
+            let current = 0;
+            const updateCounter = () => {
+                current += step;
+                if (current < target) {
+                    counter.innerText = Math.floor(current);
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    counter.innerText = target;
+                }
+            };
+            
+            // Start counter when scrolled into view
+            const observer = new IntersectionObserver((entries) => {
+                if (entries[0].isIntersecting) {
+                    updateCounter();
+                    observer.disconnect();
+                }
+            });
+            observer.observe(counter);
+        });
+    </script>
+</body>
+</html>
